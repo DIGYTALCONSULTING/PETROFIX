@@ -2,11 +2,15 @@
   "name": "petrofix",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://andreslaverdeosorio.github.io/PETROFIX/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -15,6 +19,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.3",
+    "gh-pages": "^6.3.0",
     "vite": "^7.2.4"
   }
 }

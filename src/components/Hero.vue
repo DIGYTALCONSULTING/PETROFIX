@@ -1,5 +1,5 @@
 <script setup>
-import poster from '@/assets/images/hero-poster.webp'
+import poster from '@/assets/images/bg_hero_azul_.png'
 
 </script>
 
@@ -33,7 +33,7 @@ import poster from '@/assets/images/hero-poster.webp'
         <!-- Badge -->
         <div
           class="mb-8 inline-flex items-center gap-3 rounded-full
-                 border border-orange-500/30 bg-orange-500/10
+                 border border-white bg-orange-500/10
                  px-6 py-2 text-[10px] font-black tracking-[0.3em]
                  uppercase text-orange-400"
         >
@@ -48,7 +48,7 @@ import poster from '@/assets/images/hero-poster.webp'
         >
           PETROFIX <br />
           <span
-            class="bg-gradient-to-b from-orange-400 to-orange-700
+            class="bg-gradient-to-b from-blue-300 to-blue-700
                    bg-clip-text text-transparent italic"
           >
             SOLUCIONES INTEGRALES

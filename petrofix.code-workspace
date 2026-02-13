@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../Proyecto_DG/digytalconsulting"
 		}
 	]
 }

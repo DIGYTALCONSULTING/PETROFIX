@@ -1,6 +1,5 @@
 <script setup>
-import poster from '@/assets/images/bg_hero_azul_.png'
-
+import poster from '@/assets/images/bg_hero_petrofix.webp'
 </script>
 
 <template>
@@ -22,7 +21,6 @@ import poster from '@/assets/images/bg_hero_azul_.png'
         <source :src="videoSrc" type="video/mp4" />
       </video>
 
-      <!-- Overlay -->
       <div class="absolute inset-0 bg-black/60"></div>
     </div>
 
@@ -41,7 +39,7 @@ import poster from '@/assets/images/bg_hero_azul_.png'
           Ingeniería para el sector petrolero
         </div>
 
-        <!-- H1 SEO -->
+        <!-- H1 -->
         <h1
           class="mb-8 max-w-5xl text-4xl sm:text-6xl lg:text-[8rem]
                  font-black leading-[0.9] tracking-tight text-white"
@@ -65,6 +63,8 @@ import poster from '@/assets/images/bg_hero_azul_.png'
 
         <!-- CTA -->
         <div class="flex flex-col gap-6 sm:flex-row sm:items-center">
+
+          <!-- BOTON PREMIUM -->
           <a
             href="#contacto"
             class="flex items-center gap-4 rounded-2xl
@@ -72,11 +72,15 @@ import poster from '@/assets/images/bg_hero_azul_.png'
                    text-sm sm:text-base font-black uppercase
                    tracking-widest text-white
                    hover:bg-orange-700 hover:scale-105
-                   transition active:scale-95"
+                   transition active:scale-95
+
+                   animate-bounce
+                   [animation-duration:2.8s]
+                   [animation-timing-function:cubic-bezier(.4,0,.2,1)]
+                   will-change-transform"
           >
             CONTACTANOS
-
-            <!-- Rayo SVG -->
+            
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M13 2L3 14h7l-1 8 10-12h-7z"/>
             </svg>
@@ -93,7 +97,6 @@ import poster from '@/assets/images/bg_hero_azul_.png'
                      group-hover:bg-white group-hover:text-black
                      transition"
             >
-              <!-- Play SVG -->
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z"/>
               </svg>
@@ -106,19 +109,7 @@ import poster from '@/assets/images/bg_hero_azul_.png'
       </div>
     </div>
 
-    <!-- SCROLL DOWN -->
-    <a
-      href="#servicios"
-      aria-label="Scroll a servicios"
-      class="absolute bottom-8 left-1/2 -translate-x-1/2
-             animate-bounce rounded-full border
-             border-orange-500/30 bg-orange-500/10
-             p-3 text-orange-400"
-    >
-      <!-- Chevron SVG -->
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-        <path d="M6 9l6 6 6-6" stroke-width="2"/>
-      </svg>
-    </a>
+    <!-- SCROLL -->
+    
   </section>
 </template>

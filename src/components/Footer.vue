@@ -9,26 +9,13 @@
         <div class="sm:col-span-2 lg:col-span-1">
           <div class="flex items-center gap-3 mb-6 md:mb-8">
             <!-- Logo SVG inline -->
-            <div class="text-white w-8 h-8 md:w-10 md:h-10">
-              <svg viewBox="0 0 100 100" class="w-full h-full">
-                <defs>
-                  <linearGradient id="dropGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#FFD700" />
-                    <stop offset="100%" stop-color="#FF4500" />
-                  </linearGradient>
-                </defs>
-                <path 
-                  d="M50 10 L56 22 A30 30 0 0 1 68 28 L80 22 L88 30 L82 42 A30 30 0 0 1 82 58 L88 70 L80 78 L68 72 A30 30 0 0 1 56 78 L50 90 L40 90 L34 78 A30 30 0 0 1 22 72 L10 78 L2 70 L8 58 A30 30 0 0 1 8 42 L2 30 L10 22 L22 28 A30 30 0 0 1 34 22 L40 10 Z" 
-                  fill="currentColor" 
-                />
-                <circle cx="50" cy="50" r="28" fill="#050810" />
-                <circle cx="50" cy="50" r="24" fill="none" stroke="currentColor" stroke-width="4" />
-                <path 
-                  d="M50 30 C50 30 35 45 35 58 C35 66 41.7 73 50 73 C58.3 73 65 66 65 58 C65 45 50 30 50 30 Z" 
-                  fill="url(#dropGradientFooter)" 
-                />
-              </svg>
-            </div>
+             <img :src="logo" alt="Petrofix" class="
+              h-11 sm:h-12 lg:h-14
+              w-auto
+              drop-shadow-[0_0_2px_#ffffff]
+              transition-all duration-300 hover:drop-shadow-[0_0_6px_#ffffff]
+            " />
+            
             <span class="font-black text-xl md:text-2xl tracking-tight text-white uppercase">
               PETRO<span class="text-[#FF5F00]">FIX</span>
             </span>
@@ -61,7 +48,7 @@
             <li v-for="link in exploreLinks" :key="link">
               <a 
                 :href="`#${link.toLowerCase()}`" 
-                class="hover:text-[#FF5F00] transition-colors duration-300 block py-1 md:py-0"
+                class="hover:text-[#0062ff] transition-colors duration-300 block py-1 md:py-0"
               >
                 {{ link }}
               </a>
@@ -78,7 +65,7 @@
             <li v-for="resource in resources" :key="resource">
               <a 
                 href="#" 
-                class="hover:text-[#FF5F00] transition-colors duration-300 block py-1 md:py-0"
+                class="hover:text-[#0062ff] transition-colors duration-300 block py-1 md:py-0"
               >
                 {{ resource }}
               </a>
@@ -104,7 +91,7 @@
               aria-label="Email para newsletter"
             />
             <button 
-              class="bg-[#FF5F00] text-white px-4 md:px-6 py-3 md:py-3 rounded-lg md:rounded-xl font-black text-xs md:text-sm hover:scale-[1.05] active:scale-95 transition-transform duration-200 whitespace-nowrap"
+              class="bg-[#0062ff] text-white px-4 md:px-6 py-3 md:py-3 rounded-lg md:rounded-xl font-black text-xs md:text-sm hover:scale-[1.05] active:scale-95 transition-transform duration-200 whitespace-nowrap"
               type="button"
             >
               GO
@@ -126,7 +113,7 @@
           class="flex items-center gap-2 md:gap-3 text-gray-600 hover:text-[#FF5F00] font-black uppercase tracking-wider text-xs group transition-all duration-300"
           aria-label="Volver al inicio"
         >
-          VOLVER AL CIELO
+          VOLVER AL INICIO
           <svg 
             class="w-5 h-5 md:w-6 md:h-6 group-hover:-translate-y-1 md:group-hover:-translate-y-2 transition-transform duration-300" 
             fill="none" 
@@ -143,7 +130,7 @@
 
 <script setup>
 import { computed, defineComponent, h } from 'vue'
-
+import logo from '@/assets/images/logo_PT.png'
 // Año actual
 const currentYear = computed(() => new Date().getFullYear())
 
@@ -250,4 +237,5 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
 }
+
 </style>

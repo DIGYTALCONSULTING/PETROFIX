@@ -5,6 +5,7 @@ import Metrics from './components/Metrics.vue'
 import ProblemSolution from './components/ProblemSolution.vue'
 import Services from './components/Services.vue'
 import Equipment from './components/Equipment.vue'
+import Accesories from './components/Accesories.vue'
 import Testimonials from './components/Testimonials.vue'
 import ContactForm from './components/ContactForm.vue'
 import Footer from './components/Footer.vue'
@@ -18,6 +19,7 @@ import Footer from './components/Footer.vue'
   <ProblemSolution />
   <Services />
   <Equipment />
+  <Accesories />
   <Testimonials />
   <ContactForm />
   <Footer />

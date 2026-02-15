@@ -32,7 +32,7 @@
               <!-- Título con animación de texto -->
               <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 sm:mb-8 tracking-tight animate-slideUp">
                 HABLEMOS <br /> 
-                DE <span class="text-[#FF5F00] italic animate-pulse">INGENIERÍA.</span>
+                DE <span class="text-[#0059FF] italic animate-pulse">INGENIERÍA.</span>
               </h2>
               
               <!-- Descripción -->
@@ -126,7 +126,7 @@
               <!-- Botón de envío -->
               <button 
                 type="submit"
-                class="w-full bg-gradient-to-r from-[#FF5F00] to-[#FF8C00] text-white py-4 sm:py-5 md:py-6 rounded-2xl font-black text-lg sm:text-xl md:text-2xl hover:shadow-[0_20px_50px_-10px_rgba(255,95,0,0.4)] transition-all duration-300 flex items-center justify-center gap-3 sm:gap-4 group active:scale-[0.98]"
+                class="w-full bg-gradient-to-r from-[#0059FF] to-[#00AAFF] text-white py-4 sm:py-5 md:py-6 rounded-2xl font-black text-lg sm:text-xl md:text-2xl hover:shadow-[0_20px_50px_-10px_rgba(255,95,0,0.4)] transition-all duration-300 flex items-center justify-center gap-3 sm:gap-4 group active:scale-[0.98]"
                 :style="{
                   animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                 }"

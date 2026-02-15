@@ -67,7 +67,7 @@ onUnmounted(() => {
             :href="cta.href"
             class="rounded-xl bg-blue-800 px-6 py-2.5
                    text-xs font-bold uppercase tracking-widest text-white
-                   hover:bg-black transition"
+                   hover:bg-orange-500 transition"
           >
             {{ cta.label }}
           </a>
